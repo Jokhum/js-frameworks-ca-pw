@@ -34,7 +34,7 @@ Change the line
 ```
 export const TOKENURL = "http://localhost:10011/wp-json/jwt-auth/v1/token";
 ```
-in api.js file in the constants folder to the server of your choice.
+in api.js file in the constants folder with the adress to a server of your choice.
 
 ### Running
 
