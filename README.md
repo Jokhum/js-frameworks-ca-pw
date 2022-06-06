@@ -1,76 +1,52 @@
 # JS Frameworks Course Assignment
 
-## Brief
 
-Create either a new React or Next.js app in this repo.
+## Description
 
-For the login functionality, use either a Wordpress installation with the <a href="https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/" target="_blank">JWT plugin from Module 3</a> installed, or a Strapi installation. Do not add either of these to your repo. Your API should remain a separate project. The markers will use their own installations when marking.
+- Retrieve data from a random API that returns a list of items & also single items by parameter ( id, slug, etc )
+- Display items with atleast two properties on homepage and supply a link to each individual items details page.
+- Detail page should contain three properties from the result.
+- A contact page with the following inputs: First name, last name, e-mail, subject and a message. Validation on all inputs.
+- Login page with the appropriate inputs and also the necessary validation. ( Login information used from a WP server run locally.)
+- Admin page with a simple "Admin" heading.
 
-You can use either a REST or GraphQL API for the API calls.
+## Built With
 
----
+- React
 
-## Level 1
+## Getting Started
 
-Your app should have the following paths:
+### Installing
 
--   "/"
--   "/detail/:param"
--   "/contact"
--   "/login"
--   "/admin"
+1. Clone the project files from this repository and install dependencies:
 
-The admin path won't appear in your navigation.
+```bash
+https://github.com/Jokhum/js-frameworks-ca-pw.git
+```
+```bash
+npm install
+```
 
-Use reusable components where appropriate and pay attention to how the components are arranged.
+2. Then run a local or supply a hosted server for login function:
 
-### Home
+```Change the line "export const TOKENURL = "http://localhost:10011/wp-json/jwt-auth/v1/token";" in api.js file in the constants folder to the server of your choice
+ ```
 
-Find an API that returns at least:
+### Running
 
--   an array of items
--   a single item retrieved by a parameter (id, name, slug, etc)
+To run the project:
 
-If you are using Next you can also hard-code json and return it from API routes created in `pages/api/*`.
+1. Open a new terminal window in your code editor and run the command:
 
-You can use your own Wordpress or Strapi or any other API that you have created for these calls but it must be publically hosted - it must not be running on your localhost.
+```bash
+npm run start
+```
 
-Display at least 2 properties from each result.
+## Contact
 
-Each result should link to the detail page, passing a parameter in the URL.
-
-### Detail
-
-Retrieve the parameter from the URL and use it in an API call to fetch one item.
-
-Display at least 3 properties from the item.
-
-### Contact
-
-Create a form with the following inputs and validation:
-
--   First name - required, minimum 3 characters
--   Last name - required, minimum 4 characters
--   Email - required, must be in a valid email format
--   Subject - required, this must be a select box with at least 2 options
--   Message - required, minimum 10 characters.
-
-### Login
-
-Create a form with username/email and password fields. The inputs should have the necessary validation for a login form (not a registration form).
-
-The form should make a login request to either a Wordpress API with the JWT plugin installed or a Strapi API. If the login is successful redirect the user to the admin route.
-
-If the login is unsuccessful display a message above the form.
-
-### Admin
-
-This page will simply display an "Admin" heading.
-
----
-
-## Level 2
-
-Add a favourite button/icon component to each result on your home page. Clicking this button will toggle the result in/out of a favourites array.
-
-Add a "/favourites" path to your routes. This page will display all the items currently in the favourites array.
+<a href="https://www.linkedin.com/in/pwerven/" target="_blank">
+  <img src=https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white />
+</a>
+<a href="mailto:p_werven@gmail.com" target="_blank">
+  <img src=https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white />
+</a>
