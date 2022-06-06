@@ -1,5 +1,6 @@
 # JS Frameworks Course Assignment
 
+![image](https://github.com/Jokhum/js-frameworks-ca-pw/blob/9284e31cee4f2cb8aa15cdf4ddd497eb3e7bdf54/src/images/projectimg.png)
 
 ## Description
 
