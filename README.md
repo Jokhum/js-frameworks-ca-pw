@@ -30,9 +30,11 @@ npm install
 
 2. Then run a local or supply a hosted server for login function:
 
+Change the line 
 ```
-Change the line "export const TOKENURL = "http://localhost:10011/wp-json/jwt-auth/v1/token";" in api.js file in the constants folder to the server of your choice
+export const TOKENURL = "http://localhost:10011/wp-json/jwt-auth/v1/token";
 ```
+in api.js file in the constants folder to the server of your choice.
 
 ### Running
 
